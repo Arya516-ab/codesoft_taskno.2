@@ -1,12 +1,27 @@
-Lamborghini Landing Page
+Lamborghini Landing Page — Internship Task
+Overview
 
-A single-page, animated landing page for the Lamborghini Gallardo LP560, built with plain HTML, CSS, and JavaScript.
+This project is a submission for an internship task: building a responsive, animated landing page using HTML, CSS, and JavaScript. It showcases the Lamborghini Gallardo LP560 with a hero section, car stats, and smooth entrance animations.
 
-Features
-Responsive layout (mobile menu toggle + desktop nav)
-Animated entrance effects powered by GSAP
-Ionicons for the menu and stat icons
-Custom CSS variables for easy theming (colors, fonts, sizes)
+Objective
+Recreate a polished, modern landing page from a design reference
+Apply responsive design principles (mobile-first, breakpoints for tablet/desktop)
+Add motion/interactivity using a JS animation library
+Practice clean, maintainable CSS using custom properties (variables)
+Tech stack
+Tool	Purpose
+HTML5	Page structure
+CSS3	Styling, responsive layout, custom properties
+JavaScript (vanilla)	Mobile menu toggle
+GSAP 3.2.4	Entrance animations
+Ionicons 5.0.0	Icons
+Google Fonts (Montserrat)	Typography
+Features implemented
+Fixed header with responsive nav (hamburger menu on mobile)
+Hero section with vertical rotated title and car image
+Two info cards showing 0–100 km/h time, top speed, and power stats
+GSAP-powered fade/slide-in animations on page load
+Fully responsive across mobile, tablet, and desktop breakpoints
 File structure
 .
 ├── index.html        # Page markup
@@ -14,34 +29,24 @@ File structure
 ├── main.js           # Menu toggle + GSAP animations
 └── lamborghini.png   # Car image
 
-Note: index.html, style.css, main.js, and lamborghini.png must all sit in the same folder — the HTML references them with relative paths (e.g. href="style.css"), not an assets/ subfolder.
+All four files must stay in the same folder — the HTML links to them with relative paths (e.g. href="style.css").
 
-Running it
+How to run
 
-No build step required.
+No build step needed.
 
-Keep all four files in one folder.
-Open index.html directly in a browser, or serve the folder locally:
+Keep all four files together in one folder.
+Open index.html in a browser, or serve it locally:
 bash
    npx serve .
-   # or
-   python -m http.server 8000
-Visit the page (e.g. http://localhost:8000).
-Dependencies (loaded via CDN)
-GSAP 3.2.4 — animations
-Ionicons 5.0.0 — icons
-Google Fonts: Montserrat — typography
+View in browser.
+What I learned
+Structuring a landing page with semantic HTML
+Using CSS custom properties for a consistent, themeable design system
+Writing responsive layouts with grid/flexbox and media queries
+Integrating a third-party animation library (GSAP) for polish
+Debugging asset path issues between HTML and linked CSS/JS/image files
+Author
 
-An internet connection is needed for these to load, since they aren't bundled locally.
+Submitted as part of internship coursework
 
-Customization
-
-Key design tokens live at the top of style.css under :root:
-
---first-color — accent yellow
---bg-color — background
---text-color — body text
---icon-color — icon accent
---body-font — typeface
-
-Adjust these to re-theme the page without touching layout code.
